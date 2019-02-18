@@ -191,7 +191,7 @@ class IndexDocument implements JsonSerializable {
 	 * @return bool
 	 */
 	final public function hasIndex(): bool {
-		return !($this->index === null);
+		return $this->index !== null;
 	}
 
 
